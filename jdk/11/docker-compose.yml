@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+    jdk:
+      image: openjdk:11
+      container_name: jdk-11
+      volumes:
+        - jdk:/usr/local/openjdk-11
+
+volumes:
+    jdk:
+      driver: local
