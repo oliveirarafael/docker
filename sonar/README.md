@@ -10,12 +10,16 @@ ERROR: [1] bootstrap checks failed sonar | [1]: max virtual memory areas vm.max_
 
 ## Solução
 
+### Linux
+
 ```
 sysctl -w vm.max_map_count=262144
 sysctl -w fs.file-max=65536
 ulimit -n 65536
 ulimit -u 4096
 ```
+
+### Windows
 
 Você pode encontrar a explicação dessa solução dentro da documentação no Docker Hub do SonarQube
 
