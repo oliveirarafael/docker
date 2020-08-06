@@ -1,1 +1,2 @@
 .vscode/*
+/jenkins/jenkins_home/**
