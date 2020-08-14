@@ -29,3 +29,6 @@ https://hub.docker.com/_/sonarqube/
 ## Documentação
 https://docs.sonarqube.org/latest/
 
+## Usuario
+Login: admin
+Senha: admin
