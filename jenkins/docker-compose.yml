@@ -2,14 +2,12 @@ version: "3.3"
 
 services:
   jenkins:
-    image: jenkins:2.60.3
+    image: jenkins/jenkins:lts
     container_name: jenkins
-    #privileged: true
-    #user: root
+    privileged: true
+    user: root
     ports:
       - 8080:8080
       - 5000:5000
     volumes:
-      - type: bind
-        source: ./jenkins_home
-        target: /var/jenkins_home
+      - ./jenkins_home:/var/jenkins_home
